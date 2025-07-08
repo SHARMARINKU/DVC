@@ -5,7 +5,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_community.document_loaders import TextLoader
 load_dotenv()
 model=ChatOpenAI()
-loader = TextLoader('cricket.txt', encoding='utf-8')
+loader = TextLoader('./data/cricket.txt', encoding='utf-8')
 docs = loader.load()
 
 prompt = PromptTemplate(

@@ -12,7 +12,7 @@ prompt = PromptTemplate(
     template='Write a summary for the following poem - \n {poem}',
     input_variables=['poem']
 )
-
+print("rinku")
 parser = StrOutputParser()
 
 print(type(docs))
